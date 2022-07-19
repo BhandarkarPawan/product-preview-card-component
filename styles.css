@@ -1,0 +1,105 @@
+html {
+    --color-cream: hsl(30, 38%, 92%);
+    --color-dark-cyan: hsl(158, 36%, 37%);
+    --color-darker-cyan: hsl(158, 36%, 20%);
+    --color-very-dark-blue: hsl(212, 21%, 14%);
+    --color-dark-grayish-blue: hsl(228, 12%, 48%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--color-cream);
+    display: flex;
+    font-family: "Montserrat";
+    color: var(--color-dark-grayish-blue);
+}
+
+h1 {
+    --size: calc(1rem * (32 / 16));
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: var(--size);
+    line-height: var(--size);
+    color: var(--color-very-dark-blue);
+}
+
+.card {
+    display: flex;
+    height: 450px;
+    width: 600px;
+    margin: auto;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.preview {
+    width: 50%;
+    object-fit: cover;
+}
+
+.details {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category {
+    font-size: calc(1rem * (12 / 16));
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.description {
+    font-size: calc(1rem * (14 / 16));
+    font-weight: 500;
+    line-height: calc(1rem * (23 / 16));
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.pricing .sale-price {
+    font-family: "Fraunces";
+    font-weight: 700;
+    color: var(--color-dark-cyan);
+    font-size: calc(1rem * (32 / 16));
+}
+
+.pricing .retail-price {
+    font-weight: 500;
+    font-size: calc(1rem * (13 / 16));
+    text-decoration: line-through;
+}
+
+.add-btn {
+    background-color: var(--color-dark-cyan);
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: calc(1rem * (14 / 16));
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+}
+
+.add-btn:hover {
+    background-color: var(--color-darker-cyan);
+}
+
+.attribution {
+    color: black;
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+}
