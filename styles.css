@@ -27,10 +27,14 @@ h1 {
 .card {
     display: flex;
     width: 600px;
-    margin: auto;
+
     background-color: var(--color-white);
     border-radius: 10px;
     overflow: hidden;
+}
+
+main {
+    margin: auto;
 }
 
 .preview {
