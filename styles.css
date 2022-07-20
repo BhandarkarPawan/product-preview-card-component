@@ -26,8 +26,6 @@ h1 {
 
 .card {
     display: flex;
-    width: 600px;
-
     background-color: var(--color-white);
     border-radius: 10px;
     overflow: hidden;
@@ -35,6 +33,7 @@ h1 {
 
 main {
     margin: auto;
+    width: 600px;
 }
 
 .preview {
@@ -124,6 +123,7 @@ main {
     .details {
         padding: 24px;
         gap: 12px;
+        width: auto;
     }
 
     .pricing {
