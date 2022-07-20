@@ -115,4 +115,13 @@ h1 {
         width: 100%;
         max-height: 240px;
     }
+
+    .details {
+        padding: 24px;
+        gap: 12px;
+    }
+
+    .pricing {
+        margin-top: 8px;
+    }
 }
