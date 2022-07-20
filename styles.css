@@ -12,6 +12,7 @@ body {
     display: flex;
     font-family: "Montserrat";
     color: var(--color-dark-grayish-blue);
+    padding: 16px;
 }
 
 h1 {
@@ -25,7 +26,6 @@ h1 {
 
 .card {
     display: flex;
-    height: 450px;
     width: 600px;
     margin: auto;
     background-color: var(--color-white);
@@ -43,6 +43,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 16px;
 }
 
 .category {
@@ -61,7 +62,7 @@ h1 {
 .pricing {
     display: flex;
     align-items: center;
-    gap: 24px;
+    flex-wrap: wrap;
 }
 
 .pricing .sale-price {
@@ -69,6 +70,7 @@ h1 {
     font-weight: 700;
     color: var(--color-dark-cyan);
     font-size: calc(1rem * (32 / 16));
+    margin-right: 24px;
 }
 
 .pricing .retail-price {
@@ -102,4 +104,15 @@ h1 {
     bottom: 16px;
     left: 0;
     right: 0;
+}
+
+@media (max-width: 1400px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card .preview {
+        width: 100%;
+        max-height: 240px;
+    }
 }
